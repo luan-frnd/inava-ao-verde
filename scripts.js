@@ -9,3 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
         window.popupForSubscriptionsForm("https://apig.selzy.com");
     };
 });
+
+
+document.getElementById('redirectButton').addEventListener('click', function() {
+    // Substitua pelo link desejado
+    window.location.href = 'https://chat.whatsapp.com/HLutfQiUb095o6oI29HW0m';
+});
