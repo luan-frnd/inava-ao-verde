@@ -168,9 +168,10 @@
     <script src="scripts.js"></script>
     <script>
       // Inicializando o Supabase com a URL da API e a chave pública
-      const supabaseUrl = 'https://sua-url-do-supabase.supabase.co';
-      const supabaseKey = 'sua-chave-pública';
-      const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+       
+      const supabaseUrl = 'https://rclvcczgxcgkudvjrtie.supabase.co' 
+      const supabaseKey = processo . env . SUPABASE_KEY
+      const supabase = createClient ( supabaseUrl , supabaseKey )
 
       // Capturando o envio do formulário
       document.getElementById('mensagemForm').addEventListener('submit', async function(event) {
