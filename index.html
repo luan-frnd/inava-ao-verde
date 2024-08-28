@@ -147,54 +147,12 @@
            <p> um jeito melhor para nos comunicar e usar ferramentas atuais.</p>                
            <div class="footer-content-button" target="_blank"><button id="redirectButton">Entar</button></div>
           </div>
-          <div class="footer-content">
-            <div class="mensagen">
-              <h3>Envie uma Mensagem</h3>
-
-                <form id="mensagemForm">
-                    <label for="mensagem">Mensagem:</label><br>
-                    <input type="text" id="mensagem" name="mensagem"><br><br>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-          </div>
-
+          
       </div>
-        
+ 
       <div id="direito">
       <p><a href="direito-autorais/direitos_sss.pdf" target="_blank">Direitos Autorais</a> © 2024 Site Savvy Squad. Todos os direitos reservados.</p>
       </div>
     </footer>
-    <script src="scripts.js"></script>
-    <script>
-      // Inicializando o Supabase com a URL da API e a chave pública
-       
-      const supabaseUrl = 'https://rclvcczgxcgkudvjrtie.supabase.co' 
-      const supabaseKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjbHZjY3pneGNna3VkdmpydGllIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ4MTA4ODAsImV4cCI6MjA0MDM4Njg4MH0.DooOgKaeLAUBCUodswnk-z2f_V7tN77I-gduyzyULOk
-      const supabase = createClient ( supabaseUrl , supabaseKey )
-
-      // Capturando o envio do formulário
-      document.getElementById('mensagemForm').addEventListener('submit', async function(event) {
-          event.preventDefault(); // Previne o recarregamento da página
-
-          // Capturando o valor da caixa de texto
-          const mensagem = document.getElementById('mensagem').value;
-
-          // Enviando o dado para o Supabase
-          const { data, error } = await supabase
-              .from('mensagens')
-              .insert([{ conteudo: mensagem }]);
-
-          if (error) {
-              console.error('Erro ao enviar a mensagem:', error);
-          } else {
-              console.log('Mensagem enviada com sucesso:', data);
-              alert('Mensagem enviada com sucesso!');
-          }
-
-          // Limpar o campo após o envio
-          document.getElementById('mensagem').value = '';
-      });
-  </script>
 </body>
 </html>
