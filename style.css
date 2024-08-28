@@ -128,22 +128,29 @@ section h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1em;
+    
 }
 
-.container-integrate {
-    padding-top: 60px;
-    height: 88vh;
+.container-integrante { 
+    width: 100%;
+    
 }
 
-.container-integrate h2{
-    margin-bottom: 70px;
-    margin-left: 109px;
+.content-integrante{
+    margin: 5em;
 }
+
 
 .container-integrate p, .container-integrate em{
     font-size: 16px;
     font-family: PT Legenda Serifada;
     font-weight: 400;
+}
+
+.card{
+    width: 15rem; 
+    margin-right: 2em;
 }
 
 h6{
